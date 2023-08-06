@@ -1,0 +1,37 @@
+#include <iostream>
+#include <fstream>
+#include <okFrontPanel.h>
+#include <okFrontPanelDLL.h>
+using namespace std;
+
+int i;
+
+int main()
+{
+	okCFrontPanel dev;
+	okCFrontPanel::ErrorCode error;
+	
+	unsigned char hi_muxsel;
+	unsigned char hi_in[128];
+	unsigned char hi_out[128];
+	int i;
+	volatile UINT32 A;
+	long written;
+
+	dev.OpenBySerial();//接受包含目标序列号的字符串
+	error = dev.ConfigureFPGA("Counters.bit");
+	// It’s a good idea to check for errors here!
+	cout << dev.OpenBySerial();
+	// Send brief reset signal to initialize the FIFO.
+	dev.SetWireInValue(0x03, 0x0A);
+	dev.UpdateWireIns();
+	dev.UpdateWireOuts();
+	A = dev.GetWireOutValue(0x21);
+	cout << A;
+
+	
+
+//read data from 0x21
+//write address,use SetWireInValue,the address length is (0x03,0x0A) 
+
+}

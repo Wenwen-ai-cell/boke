@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Aug  5 10:59:47 2023
+# Process ID: 230484
+# Current directory: D:/YW/FPGA/viado/shuju_test2/shuju.runs/synth_1
+# Command line: vivado.exe -log Counters.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Counters.tcl
+# Log file: D:/YW/FPGA/viado/shuju_test2/shuju.runs/synth_1/Counters.vds
+# Journal file: D:/YW/FPGA/viado/shuju_test2/shuju.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Counters.tcl -notrace

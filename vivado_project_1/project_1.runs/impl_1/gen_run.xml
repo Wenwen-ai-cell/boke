@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a15tftg256-1" LaunchTime="1691204383">
+  <File Type="ROUTE-PWR" Name="Counters_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Counters.tcl"/>
+  <File Type="BITSTR-BMM" Name="Counters_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="Counters_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Counters_reports.tcl"/>
+  <File Type="OPT-DCP" Name="Counters_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Counters_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Counters.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Counters_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="Counters_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Counters_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Counters_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Counters_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Counters_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Counters_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Counters_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="Counters.bin"/>
+  <File Type="PHYSOPT-DCP" Name="Counters_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="Counters.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Counters_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Counters_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Counters_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Counters_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Counters_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Counters_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Counters_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="Counters.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Counters_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Counters_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Counters_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Counters_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Counters_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Counters_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Counters_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Counters_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="Counters_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Counters_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Counters_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Counters_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Counters_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Counters_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="Counters.bit"/>
+  <File Type="BITSTR-RBT" Name="Counters.rbt"/>
+  <File Type="BITSTR-NKY" Name="Counters.nky"/>
+  <File Type="PDI-FILE" Name="Counters.pdi"/>
+  <File Type="RCFI_FILE" Name="Counters.rcfi"/>
+  <File Type="CFI_FILE" Name="Counters.cfi"/>
+  <File Type="RNPI_FILE" Name="Counters.rnpi"/>
+  <File Type="NPI_FILE" Name="Counters.npi"/>
+  <File Type="RBD_FILE" Name="Counters.rbd"/>
+  <File Type="BITSTR-LTX" Name="Counters.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Counters.sysdef"/>
+  <File Type="BG-BGN" Name="Counters.bgn"/>
+  <File Type="BG-DRC" Name="Counters.drc"/>
+  <File Type="RDI-RDI" Name="Counters.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okCoreHarness.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okLibrary.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okPipeIn.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okPipeOut.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okWireIn.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../shuju_test2/Counters.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okWireOut.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okTriggerIn.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okTriggerOut.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okBTPipeOut.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okBTPipeIn.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okLibrary.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Counters"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../shuju_test2/xem7001.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_generator_0"/>
+</GenRun>

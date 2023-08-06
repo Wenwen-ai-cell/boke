@@ -1,0 +1,748 @@
+
+*** Running vivado
+    with args -log Counters.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Counters.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Counters.tcl -notrace
+Command: synth_design -top Counters -part xc7a15tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a15t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a15t'
+INFO: [Device 21-403] Loading part xc7a15tftg256-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 250776 
+WARNING: [Synth 8-976] ok2x has already been declared [D:/YW/FPGA/viado/shuju_test2/Counters.v:153]
+WARNING: [Synth 8-2654] second declaration of ok2x ignored [D:/YW/FPGA/viado/shuju_test2/Counters.v:153]
+INFO: [Synth 8-994] ok2x is declared here [D:/YW/FPGA/viado/shuju_test2/Counters.v:36]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 985.785 ; gain = 247.320
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Counters' [D:/YW/FPGA/viado/shuju_test2/Counters.v:15]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [D:/YW/FPGA/viado/shuju_test2/shuju.runs/synth_1/.Xil/Vivado-230484-C502-YZH/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (1#1) [D:/YW/FPGA/viado/shuju_test2/shuju.runs/synth_1/.Xil/Vivado-230484-C502-YZH/realtime/fifo_generator_0_stub.v:6]
+WARNING: [Synth 8-689] width (8) of port connection 'dout' does not match port width (32) of module 'fifo_generator_0' [D:/YW/FPGA/viado/shuju_test2/Counters.v:78]
+INFO: [Synth 8-6157] synthesizing module 'LUT4' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4' (2#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6157] synthesizing module 'LUT6' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6' (3#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (3#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13708]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (4#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13708]
+INFO: [Synth 8-6157] synthesizing module 'GND' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:14687]
+INFO: [Synth 8-6155] done synthesizing module 'GND' (6#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:14687]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:81656]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (7#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:81656]
+INFO: [Synth 8-6157] synthesizing module 'LUT5' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5' (8#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized0' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized0' (8#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+WARNING: [Synth 8-689] width (8) of port connection 'ep_dataout' does not match port width (16) of module 'okPipeIn' [D:/YW/FPGA/viado/shuju_test2/Counters.v:95]
+INFO: [Synth 8-6157] synthesizing module 'okHost' [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okLibrary.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (11#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196]
+INFO: [Synth 8-6157] synthesizing module 'IBUFG' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:33402]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFG' (12#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:33402]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:40060]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 20.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 20.833000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 4.500000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (13#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:40060]
+WARNING: [Synth 8-7023] instance 'mmcm0' of module 'MMCME2_BASE' has 18 connections declared, but only 6 given [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okLibrary.v:56]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (14#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46211]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (15#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46211]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized1' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized1' (15#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized2' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized2' (15#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized3' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized3' (15#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT2' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized4' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized4' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized0' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized0' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized5' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized5' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized6' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized6' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized7' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized7' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized8' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized8' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized3' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized3' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized1' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized1' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized9' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized9' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized10' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized10' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized2' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized2' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized3' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized3' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized4' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized4' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized11' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized11' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized4' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized4' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized5' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized5' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized12' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized12' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized13' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized13' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized14' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized14' (16#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (17#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized15' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized15' (17#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized5' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized5' (17#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (17#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized6' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized6' (17#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized16' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized16' (17#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized6' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized6' (17#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized17' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized17' (17#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized18' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized18' (17#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized19' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized19' (17#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized7' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized7' (17#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized20' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized20' (17#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized21' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized21' (17#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1479]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (18#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1479]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized8' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized8' (18#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_v13_1_1' [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okCoreHarness.v:10060]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okCoreHarness.v:10573]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okCoreHarness.v:10574]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okCoreHarness.v:10575]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okCoreHarness.v:10576]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okCoreHarness.v:10577]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okCoreHarness.v:10578]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okCoreHarness.v:10579]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (18#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39089]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (19#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39089]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized1' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized1' (19#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized2' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized2' (19#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized9' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized9' (19#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized7' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized7' (19#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized22' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized22' (19#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'FDPE' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13648]
+INFO: [Synth 8-6155] done synthesizing module 'FDPE' (20#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13648]
+INFO: [Synth 8-6157] synthesizing module 'FDCE' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13492]
+INFO: [Synth 8-6155] done synthesizing module 'FDCE' (21#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13492]
+INFO: [Synth 8-6157] synthesizing module 'RAMB18E1' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:75062]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1' (22#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:75062]
+INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13708]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (22#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13708]
+INFO: [Synth 8-6157] synthesizing module 'FDPE__parameterized0' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13648]
+INFO: [Synth 8-6155] done synthesizing module 'FDPE__parameterized0' (22#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13648]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized8' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized8' (22#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized23' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized23' (22#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized24' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized24' (22#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized25' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized25' (22#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized26' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized26' (22#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized27' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized27' (22#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized10' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized10' (22#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized11' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized11' (22#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized28' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized28' (22#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_v13_1_1' (23#1) [C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7001-A15/Vivado-2016/okCoreHarness.v:10060]
+INFO: [Synth 8-6157] synthesizing module 'DNA_PORT' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:11968]
+INFO: [Synth 8-6155] done synthesizing module 'DNA_PORT' (25#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:11968]
+INFO: [Synth 8-6157] synthesizing module 'FDCE__parameterized0' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13492]
+INFO: [Synth 8-6155] done synthesizing module 'FDCE__parameterized0' (25#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13492]
+INFO: [Synth 8-6157] synthesizing module 'FDPE__parameterized1' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13648]
+INFO: [Synth 8-6155] done synthesizing module 'FDPE__parameterized1' (25#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13648]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2' (26#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized29' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized29' (26#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized0' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized0' (26#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized30' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized30' (26#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized31' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized31' (26#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized1' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized1' (26#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized2' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized2' (26#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized3' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized3' (26#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized32' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized32' (26#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized4' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized4' (26#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized33' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized33' (26#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized5' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized5' (26#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized34' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized34' (26#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'RAM128X1S' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:70020]
+INFO: [Synth 8-6155] done synthesizing module 'RAM128X1S' (27#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:70020]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized6' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized6' (27#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized35' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized35' (27#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized7' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized7' (27#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6157] synthesizing module 'RAM32M' [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:70267]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'RAM32M' (28#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:70267]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized8' (28#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized9' (28#1) [D:/software/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39345]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter N bound to: 5 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element flag1_reg was removed.  [D:/YW/FPGA/viado/shuju_test2/Counters.v:59]
+WARNING: [Synth 8-3848] Net IO_out in module/entity Counters does not have driver. [D:/YW/FPGA/viado/shuju_test2/Counters.v:25]
+WARNING: [Synth 8-3917] design Counters has port hi_muxsel driven by constant 0
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port backup
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port backup_marker
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port srst
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port wr_clk
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port wr_rst
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port rd_clk
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port rd_rst
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh[5]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh[4]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh[3]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh[2]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh[1]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh[0]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh_assert[5]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh_assert[4]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh_assert[3]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh_assert[2]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh_assert[1]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh_assert[0]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh_negate[5]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh_negate[4]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh_negate[3]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh_negate[2]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh_negate[1]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_empty_thresh_negate[0]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh[5]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh[4]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh[3]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh[2]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh[1]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh[0]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh_assert[5]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh_assert[4]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh_assert[3]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh_assert[2]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh_assert[1]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh_assert[0]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh_negate[5]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh_negate[4]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh_negate[3]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh_negate[2]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh_negate[1]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port prog_full_thresh_negate[0]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port int_clk
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port injectdbiterr
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port injectsbiterr
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port sleep
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port m_aclk
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_aclk
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_aresetn
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port m_aclk_en
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_aclk_en
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awid[0]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[31]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[30]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[29]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[28]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[27]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[26]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[25]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[24]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[23]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[22]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[21]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[20]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[19]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[18]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[17]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[16]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[15]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[14]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[13]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[12]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[11]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[10]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[9]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[8]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[7]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[6]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[5]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[4]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[3]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[2]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[1]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awaddr[0]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awlen[7]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awlen[6]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awlen[5]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awlen[4]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awlen[3]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awlen[2]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awlen[1]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awlen[0]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awsize[2]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awsize[1]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awsize[0]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awburst[1]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awburst[0]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awlock[0]
+WARNING: [Synth 8-3331] design fifo_generator_v13_1_1 has unconnected port s_axi_awcache[3]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1047.066 ; gain = 308.602
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1047.066 ; gain = 308.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1047.066 ; gain = 308.602
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1047.066 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'okHI/hi_in0_bufg' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/YW/FPGA/viado/shuju_test2/shuju.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'fifo'
+Finished Parsing XDC File [d:/YW/FPGA/viado/shuju_test2/shuju.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'fifo'
+Parsing XDC File [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:27]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:27]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:27]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:27]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:27]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:27]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:27]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:27]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'hi_in[0]' is not supported, ignoring it [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:62]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'hi_in[0]' is not supported, ignoring it [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'ti_clk'. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'ti_clk'. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'led[*]'. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'IO_in'. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'IO_in'. [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc:99]
+Finished Parsing XDC File [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Counters_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/YW/FPGA/viado/shuju_test2/xem7001.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Counters_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Counters_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1161.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 81 instances were transformed.
+  IBUFG => IBUF: 1 instance 
+  IOBUF => IOBUF (IBUF, OBUFT): 17 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1161.258 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'fifo' at clock pin 'rd_clk' is different from the actual clock period '20.830', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1161.258 ; gain = 422.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a15tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1161.258 ; gain = 422.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for fifo. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1161.258 ; gain = 422.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1161.258 ; gain = 422.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 45 (col length:60)
+BRAMs: 50 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design Counters has port hi_muxsel driven by constant 0
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[10]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[11]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[12]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[13]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[14]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[15]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[1]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[2]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[3]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[4]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[5]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[6]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[7]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[8]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[9]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[10]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[11]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[12]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[13]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[14]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[15]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[1]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[2]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[3]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[4]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[5]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[6]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[7]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[8]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[9]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[0]) is unused and will be removed from module okPipeIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[10]) is unused and will be removed from module okPipeIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[11]) is unused and will be removed from module okPipeIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[12]) is unused and will be removed from module okPipeIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[13]) is unused and will be removed from module okPipeIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[14]) is unused and will be removed from module okPipeIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[15]) is unused and will be removed from module okPipeIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[1]) is unused and will be removed from module okPipeIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[2]) is unused and will be removed from module okPipeIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[3]) is unused and will be removed from module okPipeIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[4]) is unused and will be removed from module okPipeIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[5]) is unused and will be removed from module okPipeIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[6]) is unused and will be removed from module okPipeIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[7]) is unused and will be removed from module okPipeIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[8]) is unused and will be removed from module okPipeIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[9]) is unused and will be removed from module okPipeIn.
+WARNING: [Synth 8-3332] Sequential element (ep_write_reg) is unused and will be removed from module okPipeIn.
+WARNING: [Synth 8-3332] Sequential element (l008c72ad3b3ec61be52cde84a395c4fa_reg) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (la85eaf42c58af45585f858cdefb86492_reg) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[10]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[11]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[12]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[13]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[14]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[15]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[1]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[2]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[3]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[4]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[5]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[6]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[7]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[8]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[9]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (okHI/delays[11].fdrein0) is unused and will be removed from module Counters.
+WARNING: [Synth 8-3332] Sequential element (okHI/delays[12].fdrein0) is unused and will be removed from module Counters.
+WARNING: [Synth 8-3332] Sequential element (okHI/delays[13].fdrein0) is unused and will be removed from module Counters.
+WARNING: [Synth 8-3332] Sequential element (okHI/delays[14].fdrein0) is unused and will be removed from module Counters.
+WARNING: [Synth 8-3332] Sequential element (okHI/delays[15].fdrein0) is unused and will be removed from module Counters.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1161.258 ; gain = 422.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1161.258 ; gain = 422.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1161.258 ; gain = 422.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1161.258 ; gain = 422.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1161.258 ; gain = 422.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1161.258 ; gain = 422.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1161.258 ; gain = 422.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1161.258 ; gain = 422.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1161.258 ; gain = 422.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1161.258 ; gain = 422.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |fifo_generator_0 |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |fifo_generator_0 |     1|
+|2     |BUFG             |     3|
+|3     |CARRY4           |    26|
+|4     |DNA_PORT         |     1|
+|5     |LUT1             |    35|
+|6     |LUT2             |    35|
+|7     |LUT3             |    43|
+|8     |LUT4             |    96|
+|9     |LUT5             |    58|
+|10    |LUT6             |   267|
+|11    |LUT6_2           |    50|
+|12    |MMCME2_BASE      |     1|
+|13    |RAM128X1S        |     8|
+|14    |RAM32M           |     4|
+|15    |RAMB18E1         |     1|
+|16    |RAMB18E1_1       |     1|
+|17    |FDCE             |   128|
+|18    |FDPE             |    44|
+|19    |FDRE             |   345|
+|20    |IBUF             |     8|
+|21    |IBUFG            |     1|
+|22    |IOBUF            |    17|
+|23    |OBUF             |     5|
+|24    |OBUFT            |     1|
++------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1161.258 ; gain = 422.793
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 553 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1161.258 ; gain = 308.602
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1161.258 ; gain = 422.793
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1161.258 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'okHI/hi_in0_bufg' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1168.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 81 instances were transformed.
+  IBUFG => IBUF: 1 instance 
+  IOBUF => IOBUF (IBUF, OBUFT): 17 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+226 Infos, 205 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1168.555 ; gain = 696.785
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1168.555 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/YW/FPGA/viado/shuju_test2/shuju.runs/synth_1/Counters.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Counters_utilization_synth.rpt -pb Counters_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  5 11:00:22 2023...

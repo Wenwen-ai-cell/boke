@@ -1,0 +1,3 @@
+C:\Users\25978\Desktop\VS code\test1\x64\Debug\test1.exe
+D:\YW\FPGA\test1\x64\Debug\test1.exe
+D:\YW\FPGA\test2\x64\Debug\test2.exe
